@@ -82,7 +82,13 @@ export function Hero() {
                 }}
                 className="mr-4 inline-block [transform-style:preserve-3d]"
               >
-                {i === 2 ? <span className="text-gold-gradient italic">{w}</span> : w}
+                {i === 2 ? (
+                  <span className="-mx-2 inline-block px-2 text-gold-gradient italic">
+                    {w}
+                  </span>
+                ) : (
+                  w
+                )}
               </motion.span>
             ))}
           </h1>
