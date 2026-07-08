@@ -89,7 +89,17 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-gold/10 pt-6 sm:flex-row">
           <p className="font-sans text-xs text-muted-foreground">
-            © {new Date().getFullYear()} LUMIÈRE NOIR. Crafted in Grasse, France.
+            © {new Date().getFullYear()} LUMIÈRE NOIR. Crafted in Grasse, France.{" "}
+            Created by{" "}
+            <a
+              href="https://codeorbit.cloud"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold transition-colors hover:text-foreground"
+            >
+              codeorbit.cloud
+            </a>
+            .
           </p>
           <div className="flex gap-5 font-sans text-xs text-muted-foreground">
             <a href="#" className="transition-colors hover:text-gold">
